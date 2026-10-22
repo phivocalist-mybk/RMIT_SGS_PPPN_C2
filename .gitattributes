@@ -1,0 +1,4 @@
+# The DPoP relay page must stay byte-exact (Tide checks its hash): never convert line endings.
+public/tide_dpop_auth.html -text
+# Bash scripts break with CRLF.
+*.sh text eol=lf

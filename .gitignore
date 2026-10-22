@@ -1,3 +1,23 @@
 node_modules/
-dist/
-public/tidecloak.json
+.next/
+out/
+build/
+
+# Secrets — operator credentials NEVER belong in the repo (AP-41).
+.env
+.env.local
+.env.*.local
+scripts/.skycloak-api-key
+
+# Local TideCloak state (adapter export + H2 volume)
+data/tidecloak.json
+data/keycloakdb*
+
+# Tide agent pack (fetched from mcp.tide.org)
+.tide-pack/
+data/invite-links.txt
+data/organtrust-db.json
+data/*.log
+*.tsbuildinfo
+data/tideless-accounts.txt
+data/tidecloak.*.json
